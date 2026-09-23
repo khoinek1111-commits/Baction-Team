@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Sinh Viên</title>
+</head>
+<body>
+  <h2>Thông Tin Sinh Viên</h2>
+  <form action="#" method="POST" enctype="multipart/form-data">
+    <p>
+      <label>Full Name:</label><br>
+      <input type="text" name="fullName" required minlength="3" maxlength="50">
+    </p>
+    <p>
+      <label>Student Code:</label><br>
+      <input type="text" name="studentCode" required pattern="[A-Za-z0-9]+">
+    </p>
+    <p>
+      <label>Email:</label><br>
+      <input type="email" name="email" required>
+    </p>
+    <p>
+      <label>Phone :</label><br>
+      <input type="text" name="phone" required pattern="0[0-9]{9}">
+    </p>
+    <p>
+      <label>Date of Birth:</label><br>
+      <input type="date" name="dob">
+    </p>
+    <p>
+      <label>Age (18-30):</label><br>
+      <input type="number" name="age" min="18" max="30">
+    </p>
+    <p>
+      <label>Gender:</label><br>
+      <input type="radio" name="gender" value="Male"> Male
+      <input type="radio" name="gender" value="Female"> Female
+    </p>
+    <p>
+      <label>Major:</label><br>
+      <select name="major" required>
+        <option value="">-- Chọn ngành --</option>
+        <option value="CS">Computer Science</option>
+        <option value="IT">Information Technology</option>
+      </select>
+    </p>
+    <p>
+      <label>Year:</label><br>
+      <select name="year">
+        <option value="">-- Chọn năm --</option>
+        <option value="1">Năm 1</option>
+        <option value="2">Năm 2</option>
+        <option value="3">Năm 3</option>
+        <option value="4">Năm 4</option>
+      </select>
+    </p>
+    <p>
+      <label>Hobbies:</label><br>
+      <input type="checkbox" name="hobbies" value="reading"> Reading <br>
+      <input type="checkbox" name="hobbies" value="traveling"> Traveling <br>
+      <input type="checkbox" name="hobbies" value="music"> Music <br>
+      <input type="checkbox" name="hobbies" value="sports"> Sports
+    </p>
+    <p>
+      <label>Programming Languages:</label><br>
+      <input type="checkbox" name="languages" value="java"> Java <br>
+      <input type="checkbox" name="languages" value="c++"> C++ <br>
+      <input type="checkbox" name="languages" value="python"> Python
+    </p>
+    <p>
+      <label>Profile Picture:</label><br>
+      <input type="file" name="profilePic" accept="image/*">
+    </p>
+    <p>
+      <label>Student ID:</label><br>
+      <input type="text" name="studentId" value="SV001" readonly>
+    </p>
+    <p>
+      <label>Country:</label><br>
+      <input type="text" name="country" value="Vietnam" disabled>
+    </p>
+    <p>
+      <label>Address:</label><br>
+      <textarea name="address"></textarea>
+    </p>
+    <p>
+      <label>Introduction (Tối đa 200 ký tự):</label><br>
+      <textarea name="introduction" maxlength="200"></textarea>
+    </p>
+    <p>
+      <label>Password:</label><br>
+      <input type="password" name="password" required>
+    </p>
+    <p>
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </p>
+  </form>
+</body>
+</html>
